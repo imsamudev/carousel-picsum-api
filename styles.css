@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #fff, #cbcbcb);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel img {
+  max-width: 100%;
+  max-height: 250px;
+  opacity: 0.7;
+  position: relative;
+  z-index: 1;
+  gap: 10px;
+
+  border: 0.625rem solid white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel img.active {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.buttons {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  height: 4rem;
+  width: 2rem;
+  position: fixed;
+  top: 50%;
+}
+
+.buttons:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 1%;
+}
+#nextBtn {
+  right: 1%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 5% auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
