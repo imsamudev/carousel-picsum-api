@@ -1,5 +1,5 @@
 In this instance, I’ve created a carousel that consumes the Picsum API using VanillaJS! I’ve also added a modal window and utilized requestAnimationFrame! Currently, I’ve learned a lot with this project! 🌟
-it’s only available on desktop, but responsive design will be implemented soon! 🖥️📱
+it’s only available on desktop, but responsive design will be implemented soon! Watch on 75% zoom 🖥️📱
 
 Follow the link! https://imsamudev01.github.io/carousel-picsum-api/
 
