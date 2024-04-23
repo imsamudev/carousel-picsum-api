@@ -56,9 +56,11 @@ body {
 }
 
 #prevBtn {
+  position: fixed;
   left: 1%;
 }
 #nextBtn {
+  position: fixed;
   right: 1%;
 }
 
